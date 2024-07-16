@@ -4,6 +4,8 @@ This paper proposes `SemiSMAC-<T>`, a novel semi-supervised anomaly detection mo
 
 In detail, We follow a common workaround to exert ChatGPT for log parsing and then novely incorporate log grouping into it. The grouping process requires only a few labeled samples for ChatGPT to guide the assignment of pseudo-labels for the rest of the samples, thereby expanding training examples. Additionally, `SemiSMAC-<T>`, as a general DALD framework, adopts a random forest-based Bayesian Optimization Algorithm (BOA) to automatically tune the hyperparameters of embedded models. Consequently, efficiently and effectively improving the performance of DALD one-step further, even in low-resource scenarios.
 
+`SemiSMAC-LSTM` denotes using LSTM as the backbone of `SemiSMAC-<T>`, which is the default setting of this framework. Experiments on two popular datasets demonstrate that `SemiSMAC-LSTM` outperforms six benchmark models, even including three supervised learning models. In the low-resource data setting of 0.1% scale, `SemiSMAC-LSTM` shows its robustness and resilience, highlighting its effectiveness.
+
 ![alt](img/overview.jpg)
 
 ## Datasets
